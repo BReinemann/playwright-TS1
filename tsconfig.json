@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es2019",
+    "declaration": true,
+    "baseUrl": ".",
+    "paths": {
+      "@utils/*": ["src/utils/*"],
+      "@api/*": ["src/api/*"],
+      "@test-data/*": ["src/test-data/*"],
+      "@page-objects/*": ["src/ui/page-objects/*"],
+      "@config/*": ["config/*"]
+    },
+    "esModuleInterop": true,
+    "allowJs": true,
+    "outDir": "./build",
+    "resolveJsonModule": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": false
+  },
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "exclude": ["build"],
+  "include": [
+    "tests/**/**/*.ts",
+    "tests/**/*.ts",
+    ".eslintrc.cjs",
+    "./report.js",
+    "config/config.ts",
+    "global.d.ts"
+  ]
+}
